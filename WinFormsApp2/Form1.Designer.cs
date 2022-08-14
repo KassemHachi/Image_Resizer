@@ -62,6 +62,10 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
+            this.listBox1.Items.AddRange(new object[] {
+            "192",
+            "180",
+            "512"});
             this.listBox1.Location = new System.Drawing.Point(12, 161);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(205, 169);
@@ -134,6 +138,10 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 15;
+            this.listBox2.Items.AddRange(new object[] {
+            "192",
+            "180",
+            "512"});
             this.listBox2.Location = new System.Drawing.Point(231, 161);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(205, 169);

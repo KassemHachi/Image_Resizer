@@ -9,21 +9,22 @@ namespace WinFormsApp2
         {
             InitializeComponent();
         }
-        private void ResizeFunc(int width,int Height, string path)
+        private void ResizeFunc(int width,int Height, string path,string name)
         {
             using var image = SixLabors.ImageSharp.Image.Load(path);
             image.Mutate(x => x.Resize( width,Height));
-            image.Save(Path.GetDirectoryName(path) +"\\output_"+width.ToString()+"_"+ ".png");
+            image.Save(Path.GetDirectoryName(path) +"\\"+ name + "-"+width.ToString()+".png");
         }
         string pathImage = "";
         string imageName = "";
+        string safeName = "";
         private void button1_Click(object sender, EventArgs e)
         {
             
             if (openFileDialog1.ShowDialog() != DialogResult.Cancel)
             {
                 pathImage = openFileDialog1.FileName;
-                
+                safeName = openFileDialog1.SafeFileName;
                 label1.Text = pathImage;
                 
             }
@@ -34,11 +35,13 @@ namespace WinFormsApp2
         {
             if (listBox1.Items.Count > 0)
             {
+                this.Cursor = Cursors.WaitCursor;
                 for (int x = 0; x < listBox1.Items.Count; x++)
                 {
-                    ResizeFunc(int.Parse(listBox1.Items[x].ToString()), int.Parse(listBox2.Items[x].ToString()), pathImage); ;
+                    ResizeFunc(int.Parse(listBox1.Items[x].ToString()), int.Parse(listBox2.Items[x].ToString()), pathImage, safeName); ;
 
                 }
+                this.Cursor = Cursors.Default;
             }
 
         }
