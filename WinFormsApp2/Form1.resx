@@ -60,4 +60,7 @@
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>"All Files (*.*)|*.* |All Pictures (*.emf;*.wmf;*.jpg;*.jpeg;*.jfif;*.jpe;*.png;*.bmp;*.dib;*.rle;*.gif;*.emz;*.wmz;*.tif;*.tiff;*.svg;*.ico) |*.emf;*.wmf;*.jpg;*.jpeg;*.jfif;*.jpe;*.png;*.bmp;*.dib;*.rle;*.gif;*.emz;*.wmz;*.tif;*.tiff;*.svg;*.ico |Windows Enhanced Metafile (*.emf)|*.emf |Windows Metafile (*.wmf)|*.wmf |JPEG File Interchange Format (*.jpg;*.jpeg;*.jfif;*.jpe)|*.jpg;*.jpeg;*.jfif;*.jpe |Portable Network Graphics (*.png)|*.png |Bitmap Image File (*.bmp;*.dib;*.rle)|*.bmp;*.dib;*.rle |Compressed Windows Enhanced Metafile (*.emz)|*.emz |Compressed Windows MetaFile (*.wmz)|*.wmz |Tag Image File Format (*.tif;*.tiff)|*.tif;*.tiff |Scalable Vector Graphics (*.svg)|*.svg |Icon (*.ico)|*.ico"</value>
+  </data>
 </root>
