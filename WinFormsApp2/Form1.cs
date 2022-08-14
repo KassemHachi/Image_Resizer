@@ -21,7 +21,7 @@ namespace WinFormsApp2
         private void button1_Click(object sender, EventArgs e)
         {
             
-            if (openFileDialog1.ShowDialog() != DialogResult.Cancel)
+            if (openFileDialog1.ShowDialog() != DialogResult.Cancel && openFileDialog1.FileName != "")
             {
                 pathImage = openFileDialog1.FileName;
                 safeName = openFileDialog1.SafeFileName;
@@ -33,7 +33,7 @@ namespace WinFormsApp2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items.Count > 0)
+            if (listBox1.Items.Count > 0 && label1.Text != "")
             {
                 this.Cursor = Cursors.WaitCursor;
                 for (int x = 0; x < listBox1.Items.Count; x++)
