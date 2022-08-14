@@ -40,6 +40,7 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
@@ -118,7 +119,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 336);
+            this.button4.Location = new System.Drawing.Point(12, 376);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(424, 31);
             this.button4.TabIndex = 0;
@@ -166,11 +167,22 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Height";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(12, 336);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(65, 23);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Clear";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 378);
+            this.ClientSize = new System.Drawing.Size(448, 419);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -182,9 +194,10 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
+            this.MaximumSize = new System.Drawing.Size(464, 458);
+            this.MinimumSize = new System.Drawing.Size(464, 458);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Resizer Image";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
@@ -206,5 +219,6 @@
         private ListBox listBox2;
         private Label label2;
         private Label label3;
+        private Button button5;
     }
 }

@@ -78,6 +78,14 @@ namespace WinFormsApp2
 
         }
 
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
